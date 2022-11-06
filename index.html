@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  <!-- Ligação entre o index e o arquivo css -->
+    <script defer src="script.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <!--Dividindo a tela em partes-->
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Pense grande,<br>Nos deixe ajudar!</h1>
+            <img src="astronauta.svg" class="left-login-image" alt="astronauta animação"> <!-- Adicionando a imagem externa, adquirida no storyset -->
+        </div>
+        
+        <form>
+            <div class="right-login">
+                <div class="card-login">
+                    <h1>Login</h1>
+                    
+                        <div class="textfield"> <!-- criando campos de texto -->
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Email">    
+                        </div>
+                        <div class="textfield">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" placeholder="Senha">    
+                            <p><a href="#">Esqueci minha senha</a></p>
+                        </div>
+                    
+                    <button type="submit" class="btn-login">Login</button>
+                    <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

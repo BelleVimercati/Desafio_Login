@@ -1,0 +1,156 @@
+/* Optei por testar utilizar uma fonte externa, peguei o import do site do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');  
+
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+body *{
+    box-sizing: border-box; /*Fazendo com que todos os elementos estilizados dentro do body respeitem um tamanho específico,
+    Dessa forma quando muda para mobile os elementos são ajustados com uma pequena borda de distância para o fim  da tela.*/
+}
+
+.error{ /*Adição da propriedade border para os elementos que estão vazios de acordo com o arquivo JS*/
+    border: 2px solid red;
+}
+
+.main-login{
+    width: 100vw; /*Ajustando as informações de acordo com as dimensões da tela*/ 
+    height: 100vh;
+    background-color: #131426;
+    display: flex; /*Faz com que tanto o lado esquerdo quanto o direito fiquem alinhados na horizontal */
+    justify-content: center; /*Alinhando o centro do eixo x*/
+    align-items: center; /*Alinhando o centro do eixo y*/
+}
+
+.left-login{ /*Lado esquerdo*/
+    width: 50vw; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*Colocando o texto e a imagem na mesma coluna*/
+}
+
+.left-login > h1 { /*Título do lado esquerdo*/
+    font-size: 3vw;
+    color: #FF19A3; 
+}
+
+.left-login-image{ /*Tamanho da imagem*/
+    width: 35vw;
+}
+
+.right-login{ /*Lado direito*/
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{ /*Configurando o card de login*/
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px; /*Criando as bordinhas entre os elementos e o final do card*/
+    background-color: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056; /*Criando uma sombra*/
+}
+
+.card-login > h1{
+    color: #FA0096;
+    font-weight: 800;
+    margin: 0;
+}
+
+.card-login > p{ /* Configurando o link para cadastro*/
+    color: #fff0f4de;
+}
+
+.textfield{ /*Estilizando a parte dos inputs*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /*Alinhando o nome dos inputs com o início da box*/
+    justify-content: center;
+    margin: 10px 0px;
+
+}
+
+.textfield > input{ /*Estilizando a parte da box dos inputs*/
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #514869;
+    color: #fff0f4de; /*Cor do texto quando é digitado dentro da box do input*/
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #fff0f4de; /*Cor do nome do input, que fica logo em cima*/
+    margin-bottom: 10px; /*Espaçamento entre o box do input com o seu nome*/
+}
+
+.textfield >input::placeholder{
+    color: #f0ffff94;
+}
+
+a{ /*Mudando a cor dos links e tirando o sublinhado*/
+    color: #11FA00;
+    text-decoration: none;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background-color: #FA0096;
+    cursor: pointer; /*Mudando o cursor do mouse ao passar por cima do botão*/
+    box-shadow: 0px 10px 40px #AD0068; /*Criando uma sombra*/
+}
+
+
+/*Configuração da responsividade de acordo com o tamanho da tela em que é acessado*/
+@media only screen and (max-width: 950px){ /*Evitando deformações e atribuindo responsividade para telas de 950px*/
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){ /*Atribuindo responsividade para quando visualizado em mobile, possa se adaptar*/
+    .main-login{
+        flex-direction: column; /*Quando em telas iguais ou menores que 600px, o lado direito e esquerdo serão exibitos verticalmente*/
+    }
+
+    .left-login{
+        width: 100%;
+        height: auto; /*Auto de adapte para que os elementos não se sobressaltem*/
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image{
+        width: 50vw;
+    }
+
+    .card-login{
+        width: 90vw; /*Para ter uma pequena bordinha entre o card e o*/
+    }
+}
