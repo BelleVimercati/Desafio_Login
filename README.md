@@ -1,5 +1,5 @@
 # [Desafio] Tela de Login
-Esse desafio faz parte do processo seletivo da Focus Consultoria, empresa Junior da UFF de Rio das Ostras. <span style="color:pink">Foi desenvolvido em 2022.2</span>\
+Esse desafio faz parte do processo seletivo da [Focus Consultoria](https://github.com/ConsultoriaFocus), empresa Junior da UFF de Rio das Ostras. <span style="color:pink">Foi desenvolvido em 2022.2</span>\
 O desafio consiste em criar uma tela de login que seja responsiva, visualmente agradável e seja capaz de identificar a tentativa de envio de campos brancos do formuário.
 - Não é necessário fazer o envio do formulário
 - Não é necessário fazer parte de "cadastro" ou "esqueci minha senha"
